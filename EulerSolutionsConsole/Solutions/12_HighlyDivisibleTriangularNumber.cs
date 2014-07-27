@@ -89,34 +89,7 @@ What is the value of the first triangle number to have over five hundred divisor
             return numDivisors;
         }
 
-        public int Choose(int n_int, int r_int)
-        {
-            ulong n = (ulong)n_int;
-            ulong r = (ulong)r_int;
-
-            ulong n_minus_r = n - r;
-            if (n_minus_r < 0)
-                throw new Exception("Invalid arguments: r must be less than or equal to n");
-
-            ulong count = Math.Max(r, n_minus_r);
-            ulong divisor = Math.Min(r, n_minus_r);
-
-            ulong accum = 1;
-
-            while (n > count)
-            {
-                accum = accum * n--;
-            }
-
-            return (int) (accum / Fact(divisor));
-        }
-
-        public ulong Fact(ulong n)
-        {
-            if (n == 0 || n == 1)
-                return 1;
-            return n * Fact(n - 1);
-        }
+        
 
         public List<ulong> GetPrimeFactors(List<ulong> factors, ulong n)
         {

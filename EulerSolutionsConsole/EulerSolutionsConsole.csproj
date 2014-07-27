@@ -62,6 +62,9 @@
     <Compile Include="Solutions\10_SumOfPrimes.cs" />
     <Compile Include="Solutions\11_LargestProductInAGrid.cs" />
     <Compile Include="Solutions\12_HighlyDivisibleTriangularNumber.cs" />
+    <Compile Include="Solutions\13_LargeSum.cs" />
+    <Compile Include="Solutions\14_LongestCollatzSequence.cs" />
+    <Compile Include="Solutions\15_LatticePaths.cs" />
     <Compile Include="Solutions\1_MultiplesOf3And5.cs" />
     <Compile Include="Solutions\2_EvenFibonacciNumbers.cs" />
     <Compile Include="Solutions\3_LargestPrimeFactor.cs" />
